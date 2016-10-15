@@ -1,0 +1,107 @@
+body,div,ul,li,span,img,table,tr,th,td,p,i,b {margin:0; padding:0;}
+li {list-style:none;}
+a {text-decoration:none;}
+body{font-family: "微软雅黑";}
+table {border-collapse: collapse;border-spacing: 0px;}
+
+/*头部*/
+.header {width:100%;}
+.header>div {width:1080px; margin:0px auto;}
+.header .fr {float:right; margin:10px; }
+.header .fr li {float:left; margin:35px 5px 0 0;}
+.header .fr ul li a {margin-left:5px; color:#999999; font-size:18px;}
+.header .fr ul li a:hover {color:#44659a;}
+
+/*导航栏*/
+.nav {width:100%; height:40px; background:#404145;}
+.navList {width:1080px; margin:0 auto;}
+.navList li {float:left; text-align:center;}
+.navList li a {color:#fff; width:150px; display:inline-block; height:40px; line-height:40px;}
+.navList li a:hover, .nav_current{background:#42aa44; position:relative;}
+.navList li:hover ul {display:block;}
+.nav_current ul {position:absolute; display:none;}
+.nav_current ul li {width:150px; height:38px; line-height:38px; display:inline-block; background:#404145;}
+.nav_current ul li:hover {background:#44659a;}
+
+/*文章头部*/
+.report_title {width:100%; height:75px;}
+.report_title:after {content:""; clear:both; display:table;}
+.report_title h2 {float:left; margin-left:30px; font-weight:normal;}
+.report_title p {color:#666; float:right; margin:27px; }
+.reprot_btn {width:100%; height:85px; background:#f0f0f0;}
+.reprot_btn:after {content:""; clear:both; display:table;}
+.report_btn_group li {float:left; margin:10px 20px;}
+.report_btn_group li a {display:inline-block; width:120px; height:30px; line-height:30px; color:#333; font-size:16px; text-align:center;}
+.report_btn_group li a:hover,.report_btn_group li a.btn_current {background:#42aa44; color:#fff; border-radius:5px;}
+.report_btn_group .line {color:#989696; height:30px; line-height:30px;}
+.reprot_btn .subject {clear:both; margin-left:20px;}
+.reprot_btn .subject li {float:left; margin:5px;}
+.subject li a {display:inline-block; width:50px; height:20px; line-height:20px; color:#666; font-size:14px; text-align:center;}
+.subject li a:hover ,.subject li a.sub_current {color:#42aa44;}
+.reprot_btn div {float:right; width:95px; height:30px; background:#42aa44; line-height:30px; text-align:center; margin:-29px 20px 0 0; border-radius:5px;color:#fff; cursor:pointer;}
+.reprot_text {margin:20px; min-height:100px; width:1038px;}
+.reprot_text:after {content:""; clear:both; display:table;}
+.reprot_text .textTitle {border-bottom:3px solid #ccc;}
+.reprot_text .textTitle b {color:#42aa44; border-bottom:3px solid #42aa44; font-size:19px; font-weight:bold;}
+.reprot_text .textTitle>span {float:right; margin:-5px 10px 0 0;}
+.maintext {margin-top:20px; border:1px solid #ccc;}
+.maintext:before , .maintext:after {content:""; clear:both; display:table;} 
+
+
+/*正文*/
+.content {width:100%; ; background-color:#f2ebd7;}
+.content>div {width:1080px; background:#fff; margin:0 auto; border: 1px solid #c9c3b9;}
+.main {min-height:600px;}
+.title {padding-top:20px; border-bottom:1px solid #ccc; margin:0 40px; }
+.title ul:before , .title ul:after {content:""; display:table; clear:both;}
+.title ul {}
+.title ul li {float:left;}
+.title ul li a {color:#333; display:inline-block; padding:0 10px 5px;}
+.line {color:#989696;}
+.title .title_current a,.title ul li a:hover {color:#42aa44; border-bottom:3px solid #42aa44;}
+
+ /*尾部*/
+#footer {width:100%; background:#404145;}
+#footer p {color:#fff; font-size:12px; color:#fff; padding:20px 0; text-align:center;}
+
+
+.btn_group {width:1000px; margin:0 auto; margin-bottom:20px; margin-top:20px;}
+.btn_group:after {content:""; display:table; clear:both;}
+.btn_group div{display:inline-block;}
+.group_btn {width:125px; height:30px; background:#42aa44; float:left; margin-right:20px;
+-moz-border-radius: 5px; /* Firefox */
+  -webkit-border-radius: 5px; /* Safari 和 Chrome */
+  border-radius: 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.group_btn a {color:#fff; font-size:16px;width:125px; height:30px; line-height:30px; display:inline-block; padding-left:10px;}
+.group_btn a span {float:right; margin:4px 12px 0 0;}
+.unabled {background:#cdcdcd;}
+.fl {float:right;}
+.nearlymonth a {display:inline-block; width:100px; height:30px; line-height:30px; border:1px solid #cdcdcd; text-align:center; font-size:14px; color:#333;}
+.nearlymonth a:hover {border:1px solid #42aa44; color:#42aa44;}
+.time input {width:105px; height:30px; line-height:30px; display:inline-block; border:1px solid #cdcdcd; font-size:14px;}
+
+.details {width:1000px; border: 1px solid #c9c3b9; margin:30px auto; box-shadow:2px 2px #ccc;}
+.details_mes {float:left; width:700px; }
+.details_mes h3 {font-size:20px; margin-left:40px; color:#333;}
+.details_mes ul {margin:0 0 20px 40px;}
+.details_mes ul:after {content:""; display:table; clear:both;}
+.details_mes ul li {float:left; margin-right:50px;}
+.view_report {margin:16px 0; float:left; width:280px; border-left:1px solid #989696; height:80px;}
+.view_report_btn {margin:15px 75px; background:#42aa44; width:150px; height:50px; line-height:50px; font-size:20px; text-align:center; border-radius:3px 3px;}
+.view_report_btn a {color:#fff;}
+.details:after {content:""; display:table; clear:both;}
+
+#grade {position:relative;}
+#gradeList {position:absolute; width:125px; background:#fff; border:1px solid #ccc;}
+#gradeList li a {display:block; margin:10px auto; width:100px; height:30px; line-height:30px; background:#dcdcdc; color:#2f3030; border-radius:5px;}
+#gradeList li a:hover,#gradeList .now {background:#42aa44; color:#fff;}
+ 
+ /* table */
+.reprot_text table {width:100%; border-collapse: collapse; border-spacing: 0px; text-align:center; color:#777;}
+.reprot_text table th {background:#cee8d1; height:35px;}
+.reprot_text table tr td {height:35px; line-height:35px; border:1px solid #ccc;}
+
+ /* 弹出框 */
+#tinybox{position:absolute; display:none; padding:10px; background:#ffffff url(../image/preload.gif) no-repeat 50% 50%; border:10px solid #e3e3e3; z-index:2000;}
+#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
+#tinycontent{background:#ffffff; font-size:1.1em;}

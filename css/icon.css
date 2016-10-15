@@ -1,0 +1,40 @@
+.icon {width:24px; height:24px; background:url(../images/icon.png) no-repeat; display:inline-block; vertical-align:middle;}
+.icon-message {background-position:0 0; vertical-align:top;}
+.icon-home {background-position:-24px 0; vertical-align:top;}
+.icon-exit {background-position:-48px 0; vertical-align:top;}
+.icon-arrow {background-position:-96px 0; margin:3px 5px;}
+.icon-arrowfl {background-position:-96px 0; margin:3px 10px; float:right;}
+.icon-arrowup {background-position:-72px 0; margin:7px;}
+.icon-arrowblueup {background-position:-144px 0;}
+.icon-arrowbluedowm {background-position:-168px 0;}
+
+.icon-reprot1 {background-position:-72px -48px; vertical-align:bottom;}
+.icon-reprot2 {background-position:-96px -48px; vertical-align:bottom;}
+.icon-reprot3 {background-position:-120px -48px; vertical-align:bottom;}
+
+.icon-detail1 {vertical-align:bottom; margin-right:10px; background-position:0 -24px;}
+.icon-detail2 {vertical-align:bottom; margin-right:10px; background-position:-24px -24px;}
+.icon-detail3 {vertical-align:bottom; margin-right:10px; background-position:-49px -24px;}
+
+.icon-out {float:right; margin:3px 10px 0 -5px; background-position:0 -48px;}
+.icon-out1 {float:right; background-position:-48px -72px;} 
+.icon-print {float:right; margin:3px 10px 0 -5px; background-position:-24px -48px; }
+.icon-hook {float:right; background-position:-144px -48px;}
+
+.icon-remark {background-position:-24px -72px;}
+.icon-statistic {background-position:0 -72px;}
+
+.icon-pre {background-position:-120px -24px; position:absolute; left:20px; top:16px; cursor:pointer;}
+.icon-next {background-position:-144px -24px; position:absolute; right:20px; top:16px; cursor:pointer;}
+
+.icon-reportTitle1 {vertical-align:bottom; background-position:-96px -24px; margin:0 3px;}
+.icon-reportTitle2 {vertical-align:bottom; background-position:-72px -24px; margin:0 3px;}
+
+.icon-school {background-position:-120px 0; vertical-align:bottom; margin-right:5px;}
+.icon-square {background-position:-168px -24px; position:absolute; left:-28px;}
+
+.icon-siderbar {background:url(../images/ui-icons.png) no-repeat; background-position:-78px -143px; width:16px; height:16px; display:inline-block; left:-24px; position:absolute;}
+.icon-pointor {background-position:-172px -48px;}
+.icon-subject {background-position:-96px -72px;}
+
+

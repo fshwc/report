@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报表</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/icon.css">
+	<link rel="stylesheet" type="text/css" href="../css/commentingPager.css" >
+</head>
+<body>
+	<div id="black_box"></div>
+	<div id="remarks" class="outbox">
+		<h3>添加备注<span class="closed">X</span></h3>
+		<p>记录学生失分原因，更有针对性的讲解试题</p>
+		<textarea></textarea>
+		<a href="javascript:void(0);" class="add">添加</a>
+		<p style="margin-top:80px;">备注记录</p>
+		<div id="remarks_list">
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div id="student_list" class="outbox" >
+		<h3>第1题--1-2分 学生名单（49人，占比92.5%）<span class="closed">X</span></h3>
+		<p>添加备注</p>
+		<textarea></textarea>
+		<a href="javascript:void(0);" class="add">添加</a>
+		<div id="stuList">
+			<ul>
+				<li>张欣雅（2分）</li><li>张三（2分）</li><li>李四（2分）</li>
+				<li>一二三（2分）</li><li>王五（2分）</li><li>一二三（2分）</li>
+				<li>王五（2分）</li><li>张欣雅（2分）</li><li>张三（2分）</li>	
+				<li>张欣雅（2分）</li><li>张三（2分）</li><li>李四（2分）</li>
+				<li>张欣雅（2分）</li><li>张三（2分）</li><li>李四（2分）</li>
+				<li>一二三（2分）</li><li>王五（2分）</li><li>一二三（2分）</li>
+				<li>王五（2分）</li><li>张欣雅（2分）</li><li>张三（2分）</li>	
+				<li>张欣雅（2分）</li><li>张三（2分）</li><li>李四（2分）</li>
+			</ul>
+		</div>
+	</div>
+	<div class="header">
+		<div>
+			<img src="../images/logo1.png">
+			<div class="fr">
+				<ul>
+					<li><a href="#"><span class="icon icon-message"></span>系统消息</a></li>
+					<li><a href="#"><span class="icon icon-home"></span>个人中心</a></li>
+					<li><a href="#"><span class="icon icon-exit"></span>退出登录</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+		<ul id="navList" class="navList">
+			<li><a href="#">选题组卷</a></li>
+			<li class="nav_current"><a href="#">考试报告<span class="icon icon-arrow"></span></a>
+				<ul>
+					<li><a href="#">校级报告</a></li>
+					<li><a href="#">班级报告</a></li>
+				</ul>
+			</li>
+			<li><a href="#">考试中心</a></li>
+			<li><a href="#">作业中心</a></li>
+			<li><a href="#">师生互动</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div>
+			<div class="report_title" id="report_title">
+				<h2>八年级期中考试</h2>
+				<p>年级：<span id="grade">八年级</span></p>
+				<p>考试创建时间：<span id="createTime">2016-04-24</span></p>				
+			</div>
+			<div class="reprot_btn">
+				<ul class="report_btn_group">
+					<li><a href="singleclassReport.html">考试总览</a></li>
+					<li class="line">|</li>
+					<li><a href="commentingPaper.html" class="btn_current">试卷讲评</a></li>
+					<li class="line">|</li>
+					<li><a href="singlesource.html">成绩汇总</a></li>
+				</ul>
+
+				<ul class="subject">
+					<li><a href="#" class="sub_current ">语文</a></li>
+					<li><a href="#">数学</a></li>
+					<li><a href="#">英语</a></li>
+					<li><a href="#">物理</a></li>
+					<li><a href="#">化学</a></li>
+					<li><a href="#">生物</a></li>
+					<li><a href="#">政治</a></li>
+					<li><a href="#">历史</a></li>
+					<li><a href="#">地理</a></li>
+				</ul>
+				<div id="export">导出<span class="icon icon-out"></span></div>
+				<div id="print">打印<span class="icon icon-print"></span></div>
+			</div>
+			<div class="reprot_text">
+				<div class="textTitle">
+					<b>答题情况</b>
+					<span><span class="section good"></span>0.85-1</span>
+					<span><span class="section mid1"></span>0.7-0.85</span>
+					<span><span class="section mid2"></span>0.6-0.7</span>
+					<span><span class="section bad"></span>0-0.6</span>
+					<span id="queue" data-val="0">按得分率由低到高排</span>
+					<!--按就把内容换为  按得分率由高到低排  -->
+				</div>
+				<div class="answerQuestion">
+					<ul>
+						<li class="bad">3</li><li class="bad">8~12</li><li class="bad">4</li>
+						<li class="mid2">6</li><li class="mid2">13~17</li><li class="mid1">18~22</li>
+						<li class="mid1">5</li><li class="mid1">23</li><li class="mid1">2</li>
+						<li class="mid1">24</li><li class="good">7</li><li class="good">1</li>
+					</ul>
+				</div>
+			</div>
+			<div class="reprot_text">
+				<div class="textTitle">
+					<b>试卷讲评</b>	
+				</div>
+				<div class="maintext">
+					<b>1</b>
+					<div class="problem" id="problem1">
+						<p>下列加下划线字注音有误的一项是（    ）</p>
+						<p>A．古刹（chà）    噩（è）梦    发酵（jiào）    刹（shā）车</p>
+						<p>B．时髦（máo）    勘（kān）察    中枢（shū）    歧（qí）视</p>
+						<p>C．瑕疵（cī）    吝（lìn）惜    应酬（chóu）    胚（pī）胎</p>
+						<p>D．暴戾（lì）    砥（dǐ）砺    畸（jī）形    应（yìng）景</p>
+					</div>
+					<div class="tip">
+						<span style="padding-left:30px;">班级平均得分</span><span class="score">1.96</span>
+						<span>/年级平均得分</span><span class="score" >1.9</span>
+						<span>(答对53人/答错1人/班级得分率98.2%）</span>
+						<a id="statistics_1" href='javascript:void(0);'><span class="icon icon-statistic"></span>答题统计<span class="icon icon-arrowbluedowm"></span></a>
+						<a href="javascript:void(0);" id="remarks_1"><span class="icon icon-remark"></span>我的备注</a>
+					</div>
+					<div class="probleDetails">
+						<div>
+							<ul>
+								<li><span>分数</span>点击柱状图可以查看学生名单</li>
+								<li>1-2
+									<div><a href='javascript:void(0);' data-txt='p1-good' style="width:68.1%"></a></div>
+								    <span>53人 占68.1%</span>
+								</li>
+								<li>0-1<div><a href='javascript:void(0);' data-txt='p1-good' style="width:31.9%"></a></div><span>22人 占31.9%</span></li>
+							</ul>
+						</div>
+						<div>
+							[答案]<c>A</c>
+						</div>
+						<div>[解析]<c>知识点：基础知识与运用>>拼音与汉字>>字音辨析</c>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reprot_text">
+				<div class="maintext">
+					<b>2</b>
+					<div class="problem" id="problem2">
+						<p>下列词语中没有错别字的一项是（    ）
+						<p>A．郑重其事  局促不安  不堪设想  心安理得</p>
+						<p>B．光明累落  一本正经  垂头丧气  突如齐来</p>
+						<p>C．淹淹一息  万赖俱寂  差强人意  花团锦簇</p>
+						<p>D．钟鸣鼎食  如释重负  婷婷玉立  沾花惹草</p>
+					</div>
+					<div class="tip">
+						<span style="padding-left:30px;">班级平均得分</span><span class="score">1.63</span>
+						<span>/年级平均得分</span><span class="score" >1.46</span>
+						<span>(答对44人/答错10人/班级得分率81.5%）</span>
+						<a id="statistics_2" href='javascript:void(0);'><span class="icon icon-statistic" ></span>答题统计</span><span class="icon icon-arrowbluedowm"></a>
+						<a href="javascript:void(0);" class="btn" id="remarks_2"><span class="icon icon-remark"></span>我的备注</a>
+					</div>
+					<div class="probleDetails">
+						<div>
+							<ul>
+								<li><span>分数</span>点击柱状图可以查看学生名单</li>
+								<li>1-2
+									<div><a href='javascript:void(0);' data-txt='p2-good' style="width:68.1%"></a></div>
+								    <span>53人 占68.1%</span>
+								</li>
+								<li>0-1<div><a href='javascript:void(0);' data-txt='p2-good' style="width:31.9%"></a></div><span>22人 占31.9%</span></li>
+							</ul>
+						</div>
+						<div>
+							[答案]<c>A</c>
+						</div>
+						<div>[解析]<c>知识点：基础知识与运用>>拼音与汉字>>字音辨析</c>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+<script type='text/javascript' src='../js/jquery.min.js'></script>
+<script type='text/javascript' src='../js/commentingPager.js'></script>
+</html>

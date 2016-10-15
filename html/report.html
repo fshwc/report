@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报表</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/icon.css">
+	<link rel="stylesheet" type="text/css" href="../css/report.css" >
+</head>
+<body>
+    <div class="header">
+		<div>
+			<img src="../images/logo1.png">
+			<div class="fr">
+				<ul>
+					<li><a href="#"><span class="icon icon-message"></span>系统消息</a></li>
+					<li><a href="#"><span class="icon icon-home"></span>个人中心</a></li>
+					<li><a href="#"><span class="icon icon-exit"></span>退出登录</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+		<ul id="navList" class="navList">
+			<li><a href="#">选题组卷</a></li>
+			<li class="nav_current"><a href="#">考试报告<span class="icon icon-arrow"></span></a>
+				<ul>
+					<li><a href="#">校级报告</a></li>
+					<li><a href="#">班级报告</a></li>
+				</ul>
+			</li>
+			<li><a href="#">考试中心</a></li>
+			<li><a href="#">作业中心</a></li>
+			<li><a href="#">师生互动</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div>
+			<div class="report_title" id="report_title">
+				<h2>八年级期中考试</h2>
+				<p>年级：<span id="grade">八年级</span></p>
+				<p>考试创建时间：<span id="createTime">2016-04-24</span></p>				
+			</div>
+			<div class="reprot_btn">
+				<ul class="report_btn_group">
+					<li><a href="#" class="btn_current">班级成绩对比</a></li>
+					<li class="line">|</li>
+					<li><a href="testReport.html">测量质量报告</a></li>
+					<li class="line">|</li>
+					<li><a href="studentSource.html">学生成绩汇总</a></li>
+				</ul>
+
+				<ul class="subject">
+					<li><a href="#" class="sub_current ">多学科</a></li>
+					<li><a href="singleReport.html">语文</a></li>
+					<li><a href="#">数学</a></li>
+					<li><a href="#">英语</a></li>
+					<li><a href="#">物理</a></li>
+					<li><a href="#">化学</a></li>
+					<li><a href="#">生物</a></li>
+					<li><a href="#">政治</a></li>
+					<li><a href="#">历史</a></li>
+					<li><a href="#">地理</a></li>
+				</ul>
+				<div id="export">导出<span class="icon icon-out"></span></div>
+				<div id="print">打印<span class="icon icon-print"></span></div>
+			</div>
+			<div class="reprot_text">
+				<div class="textTitle">
+					<b>各科目校级考试总体统计</b>
+				</div>
+				<div class="maintext">
+					<table class="subjectCount">
+						<tr>
+							<th>学科</th><th>平均分</th><th>优秀率</th>
+							<th>及格率</th><th>满分</th><th>最高分</th>
+							<th>最低分</th><th>实考人数</th><th>缺考人数</th>
+						</tr>
+						<tr>
+							<td>语文</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+						<tr>
+							<td>数学</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+						<tr>								
+							<td>英语</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+						<tr>
+							<td>政治</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+						<tr>
+							<td>历史</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+						<tr>
+							<td>地理</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+						<tr>
+							<td>物理</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+						<tr>
+							<td>化学</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+							<tr>
+							<td>生物</td><td>89</td><td>30%</td>
+							<td>40%</td><td>150</td><td>140</td>
+							<td>60</td><td>40</td><td>0</td>
+						</tr>
+						<tr>
+							<td>总分</td><td>89</td><td>..</td>
+							<td>..</td><td>150</td><td>140</td>
+							<td>60</td><td>..</td><td>..</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+			<div class="reprot_text">
+				<div class="textTitle">
+					<b>各科目班级平均分及排名</b>
+					<div class="choose_class_group">
+						<div id="total_score">总分<span class="icon icon-arrowfl"></span>
+							<ul id="total_score_ul">
+								<li><a href="#" class="choosed">总分</a></li>
+								<li><a href="#">语文</a></li>
+								<li><a href="#">数学</a></li>
+								<li><a href="#">英语</a></li>
+								<li><a href="#">物理</a></li>
+								<li><a href="#">化学</a></li>
+								<li><a href="#">生物</a></li>
+								<li><a href="#">政治</a></li>
+								<li><a href="#">历史</a></li>
+								<li><a href="#">地理</a></li>
+							</ul>
+						</div>
+						<div id="choose_class" class="choose_class">选择班级<span class="icon icon-arrowfl"></span>
+							<ul id="choose_class_ul">
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="maintext">
+					<div id="echarts_1" style="width:1000px; height:400px;"></div>
+				</div>
+			</div>
+			<div class="comment">
+				<p><span class="emphasize" id="goodclass"></span>考的不错，班级均分排名位于前3名； <span id="badclass"></span>考的不太理想，均分排名位于后3名，需要找出原因，及时调整教学策略和方法。</p>
+			</div>
+			<div class="reprot_text">
+				<div class="textTitle">
+					<b>各班级达线人数统计</b>
+					<span><a href=""><span class="icon icon-out1" title="导出"></span></a></span>
+					<span><a href="javascript:void(0);" id="topCountOk" ><span class="icon icon-hook" ></span></a></span>
+					<span>年级<input type="text" id="topCount" value="50">名</span>
+					<!--此按钮先隐藏-->
+					<span style="display:none;">
+						<div id="top_switch"><a href="#">名次统计</a>
+							<ul id="top_level_list">
+								<li><a href="#">名次统计</a></li>
+								<li><a href="#">分数线统计</a></li>
+							</ul>
+						</div>
+					</span>
+				</div>
+				<div class="maintext">
+					<table>
+						<tr>
+							<td rowspan='2'></td><th>总分</th><th>语文</th><th>数学</th><th>英语</th>
+							<th>政治</th><th>历史</th><th>地理</th><th>物理</th><th>化学</th><th>生物</th>
+						</tr>
+						<tr>
+							<td>前50名</td><td>前50名</td><td>前50名</td><td>前50名</td><td>前50名</td>
+							<td>前50名</td><td>前50名</td><td>前50名</td><td>前50名</td><td>前50名</td>
+						</tr>
+						<tr>
+							<td>八年一班</td><td>1</td><td>4</td><td>3</td><td>2</td><td>1</td><td>5</td>
+							<td>4</td><td>7</td><td>2</td><td>2</td>
+						</tr>
+						<tr>
+							<td>八年二班</td><td>1</td><td>4</td><td>3</td><td>2</td><td>1</td><td>5</td>
+							<td>4</td><td>7</td><td>2</td><td>2</td>
+						</tr>
+						<tr>
+							<td>八年三班</td><td>1</td><td>4</td><td>3</td><td>2</td><td>1</td><td>5</td>
+							<td>4</td><td>7</td><td>2</td><td>2</td>
+						</tr>
+						<tr>
+							<td>八年四班</td><td>1</td><td>4</td><td>3</td><td>2</td><td>1</td><td>5</td>
+							<td>4</td><td>7</td><td>2</td><td>2</td>
+						</tr>
+						<tr>
+							<td>八年五班</td><td>1</td><td>4</td><td>3</td><td>2</td><td>1</td><td>5</td>
+							<td>4</td><td>7</td><td>2</td><td>2</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="reprot_text">
+				<div class="textTitle">
+					<b>临界生统计</b>
+					<span><a href=""><span class="icon icon-out1" title="导出"></span></a></span>
+					<span><a href="#"><span class="icon icon-hook"></span></a></span>
+					<span>年级<input type="text" id="" value="1">名至
+					<input type="text" id="" value="100">名</span>
+					<!--此按钮先隐藏-->
+					<span style="display:none;">
+						<div id="top_switch"><a href="#">名次统计</a>
+							<ul id="top_level_list">
+								<li><a href="#">按名次统计</a></li>
+								<li><a href="#">按分数统计</a></li>
+							</ul>
+						</div>
+					</span>
+				</div>
+				<div class="maintext">
+					<table>
+						<tr>
+							<td rowspan='2'></td><th colspan='2'>总分</th><th colspan='2'>语文</th><th colspan='2'>数学</th><th colspan='2'>英语</th>
+							<th colspan='2'>政治</th><th colspan='2'>历史</th><th colspan='2'>地理</th><th colspan='2'>物理</th><th colspan='2'>化学</th><th colspan='2'>生物</th>
+						</tr>
+						<tr>
+							<td>人数</td><td>占比</td><td>人数</td><td>占比</td><td>人数</td><td>占比</td>
+							<td>人数</td><td>占比</td><td>人数</td><td>占比</td><td>人数</td><td>占比</td>
+							<td>人数</td><td>占比</td><td>人数</td><td>占比</td><td>人数</td><td>占比</td>
+							<td>人数</td><td>占比</td>
+						</tr>
+						<tr>
+							<td>八年一班</td><td>1</td><td>0.5%</td><td>4</td><td>0.5%</td><td>3</td><td>0.5%</td><td>2</td><td>0.5%</td><td>1</td><td>0.5%</td><td>5</td><td>0.5%</td>
+							<td>4</td><td>0.5%</td><td>7</td><td>0.5%</td><td>2</td><td>0.5%</td><td>2</td><td>0.5%</td>
+						</tr>
+						<tr>
+							<td>八年二班</td><td>1</td><td>0.5%</td><td>4</td><td>0.5%</td><td>3</td><td>0.5%</td><td>2</td><td>0.5%</td><td>1</td><td>0.5%</td><td>5</td><td>0.5%</td>
+							<td>4</td><td>0.5%</td><td>7</td><td>0.5%</td><td>2</td><td>0.5%</td><td>2</td><td>0.5%</td>
+						</tr>
+						<tr>
+							<td>八年三班</td><td>1</td><td>0.5%</td><td>4</td><td>0.5%</td><td>3</td><td>0.5%</td><td>2</td><td>0.5%</td><td>1</td><td>0.5%</td><td>5</td><td>0.5%</td>
+							<td>4</td><td>0.5%</td><td>7</td><td>0.5%</td><td>2</td><td>0.5%</td><td>2</td><td>0.5%</td>
+						</tr>
+						<tr>
+							<td>八年四班</td><td>1</td><td>0.5%</td><td>4</td><td>0.5%</td><td>3</td><td>0.5%</td><td>2</td><td>0.5%</td><td>1</td><td>0.5%</td><td>5</td><td>0.5%</td>
+							<td>4</td><td>0.5%</td><td>7</td><td>0.5%</td><td>2</td><td>0.5%</td><td>2</td><td>0.5%</td>
+						</tr>
+						<tr>
+							<td>八年五班</td><td>1</td><td>0.5%</td><td>4</td><td>0.5%</td><td>3</td><td>0.5%</td><td>2</td><td>0.5%</td><td>1</td><td>0.5%</td><td>5</td><td>0.5%</td>
+							<td>4</td><td>0.5%</td><td>7</td><td>0.5%</td><td>2</td><td>0.5%</td><td>2</td><td>0.5%</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="reprot_text">
+				<div class="textTitle">
+					<b>班级总分分数段对比</b>
+					<span><a href=""><span class="icon icon-out1" title="导出"></span></a></span>
+					<span><a href="#"><span class="icon icon-hook" ></span></a></span>
+					<span>设置分数段<input type="text" id="topCount" value="50">分/一段</span>
+				</div>
+				
+					<div class="choose_class_group">
+						<div id="garde_section" class="choose_class garde_section">选择班级<span class="icon icon-arrowfl"></span>
+							<ul id="garde_section_ul">
+								
+							</ul>
+						</div>
+					</div>
+					<div class="maintext">
+					<div id="echarts_2" style="width:1000px; height:430px; margin-bottom:40px;"></div>
+
+				</div>
+			</div>
+			<div class="reprot_text">
+				<div class="textTitle">
+					<b>各班级优劣势学科对比</b>
+				</div>
+				<div class="choose_class_group">
+						<div id="good" class="choose_class garde_section">选择班级<span class="icon icon-arrowfl"></span>
+							<ul id="strength_ul">
+								
+							</ul>
+						</div>
+					</div>
+				<div class="maintext">
+					<div id="echarts_3" style="width:540px; height:400px; float:left;"></div>
+					<div class="analysis">
+						<div class="boodsubject">
+							<span>优势科目</span>语文、英语、物理、生物、政治
+						</div>
+						<div class="boodsubject badsubject">
+							<span>劣势学科</span>数学、历史
+						</div>
+						<p>优劣势学科：学科的成绩已经换算成标准数，对比每个数据大小可以对比出每个学科的优劣势情况</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/echarts.min.js"></script>
+<script type="text/javascript" src="../js/report.js"></script>
+
+</html>
